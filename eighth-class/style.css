@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 800px;
+  height: 800px;
+  max-height: 100vh;
+  border: 5px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box {
+  width: 100%;
+  height: 100%;
+  background: url("KRISHNA.webp") center / cover no-repeat; 
+  position: relative;
+}
+
+.image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 1; 
+}

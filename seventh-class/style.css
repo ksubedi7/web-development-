@@ -1,19 +1,30 @@
-h1{
-    font-weight: bold;
-    color: brown;
-    margin-bottom: 8px;
+
+{ margin:0; padding:0; box-sizing:border-box; }
+
+.box {
+  width: 800px;;
+  height: 800px;;
+  max-height:100vh;
+  border:5px solid black;
+  position:relative;
+  overflow:hidden;
 }
 
-.intro{
-    font-size: 16px;
+.image-box {
+  width: 100%;
+  height: 100%;
+  background: url("images/KRISHNA.webp") center / cover no-repeat;
+  position: relative;
 }
 
-.box{
-    width: 50%;
-    border: 1px solid black;
-    padding: 10px;
+
+
+.image-box::before {
+  content:""; position:absolute; inset:0;
+  background:rgba(0,0,0,0.45);
 }
 
-.box p{
-    font-size: 12px;
+.text-overlay {
+  position:absolute; bottom:20px; left:20px;
+  color:white; z-index:1;
 }
