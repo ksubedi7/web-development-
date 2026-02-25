@@ -1,0 +1,27 @@
+body {
+  height: 200vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sticky-box-2{
+  height: 50vh;
+}
+.sticky-box-3{
+  height: 100vh;
+}
+
+.box1,.box2,.box3{
+    height: 100px;
+    width: 100px;
+    position: sticky;
+    top: 0;
+}
+
+.box1 { background: #3498db;}
+.box2 { background: #2ecc71; }
+.box3 { background: #e74c3c; }
