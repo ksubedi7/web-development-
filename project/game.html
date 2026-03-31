@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Quiz - Football Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">FOOTBALL<span>HUB</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html" class="active">Game</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <section>
+            <h2>World Cup History Quiz</h2>
+            <div class="quiz-container" id="quiz-container">
+                <div id="quiz-content">
+                    <div class="question-block">
+                        <h3 id="question-text" class="question-text">Loading question...</h3>
+                        <div id="options" class="options">
+                            <!-- Options go here automatically -->
+                        </div>
+                    </div>
+                    <button class="quiz-btn" id="next-btn" style="display: none; margin-top: 20px;">Next
+                        Question</button>
+                    <button class="quiz-btn" id="submit-btn" style="display: none; margin-top: 20px;">Submit
+                        Quiz</button>
+                </div>
+
+                <div id="quiz-result" class="quiz-result">
+                    <img id="result-image" src="" alt="Result" style="display:none; max-width: 300px; margin: 0 auto 20px; border-radius: 15px;">
+                    <h3 id="score-text">You scored X out of Y</h3>
+                    <p id="result-message">Message here</p>
+                    <button class="quiz-btn" id="restart-btn" style="margin-top: 30px;">Play Again</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Football Hub. Created by Kashyap, Laxman, and Dibya.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
